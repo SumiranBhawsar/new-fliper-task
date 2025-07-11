@@ -7,7 +7,10 @@ const app = express();
 app.use(
   cors({
     origin: function (origin, callback) {
-      const allowedOrigins = ["http://localhost:5173", process.env.CORS_ORIGIN];
+      const allowedOrigins = [
+        process.env.CORS_ORIGIN,
+        "https://new-fliper-task.onrender.com",
+      ];
       if (!origin || allowedOrigins.includes(origin)) {
         callback(null, true);
       } else {
@@ -17,6 +20,7 @@ app.use(
     credentials: true,
   })
 );
+
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true, limit: "16kb" }));
