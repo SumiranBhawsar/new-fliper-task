@@ -58,6 +58,11 @@ const FooterNewsletter = () => {
               </li>
             )
           )}
+          <li>
+            <button
+              onClick={() => navigate("/admin-login")}
+            >Admin</button>
+          </li>
         </ul>
 
         {/* Newsletter Form */}
