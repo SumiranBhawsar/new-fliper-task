@@ -4,7 +4,9 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "dev": "nodemon -r dotenv/config --experimental-json-modules src/index.js"
+    "dev": "nodemon -r dotenv/config --experimental-json-modules src/index.js",
+    "build": "npm install && cd frontend && npm install && npm run build",
+    "start": "node --watch ./server/index.js"
   },
   "keywords": [],
   "author": "",
