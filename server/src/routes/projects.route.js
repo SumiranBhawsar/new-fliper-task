@@ -8,7 +8,7 @@ import { verifyJWT } from "../middleware/auth.middleware.js";
 
 const router = Router();
 
-router.route("/allprojects").get(getAllProjects);
+router.route("/all-projects").get(getAllProjects);
 
 router
   .route("/create-project")

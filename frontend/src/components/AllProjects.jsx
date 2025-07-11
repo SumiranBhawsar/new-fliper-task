@@ -9,7 +9,7 @@ const AllProjects = () => {
   useEffect(() => {
     const fetchProjects = async () => {
       try {
-        const res = await api.get("/projects/allprojects");
+        const res = await api.get("/projects/all-projects");
         setProjects(res.data?.data?.allProjects || []);
       } catch (err) {
         toast.error("Failed to load projects");

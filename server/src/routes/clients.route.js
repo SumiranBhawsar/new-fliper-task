@@ -8,7 +8,7 @@ import { verifyJWT } from "../middleware/auth.middleware.js";
 
 const router = Router();
 
-router.route("/all-clients").get(getAll-Clients);
+router.route("/all-clients").get(getAllClients);
 
 router
   .route("/create-client")
