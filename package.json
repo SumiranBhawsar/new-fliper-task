@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "nodemon -r dotenv/config --experimental-json-modules src/index.js",
     "build": "npm install && cd frontend && npm install && npm run build",
-    "start": "node --watch ./server/index.js"
+    "start": "node --watch ./server/src/index.js"
   },
   "keywords": [],
   "author": "",
